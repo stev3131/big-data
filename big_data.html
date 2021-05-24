@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="it">
+    <head>
+        <title>BIG DATA</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.6.1/css/bootstrap4-toggle.min.css" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.6.1/js/bootstrap4-toggle.min.js"></script>
+		<style>
+			body{
+                position: relative;
+			}
+			.jumbotron-fluid{
+                background-color: #f4511e;
+                color: #fff;
+                padding: 230px 25px;
+                font-family: Montserrat, sans-serif;
+            }
+			.navbar-nav li a:hover, .navbar-nav li.active a{
+                color: #f4511e !important;
+                background-color: #fff !important;
+            }
+			.navbar-expand-sm{
+                background-color: #f4511e;
+            }
+            .nav-link{
+                color: white;
+            }
+			.btn{
+                color: #f4511e;               
+            }
+			.container-fluid{
+                text-align: center;
+                margin-top: 20px;
+            }
+			h1{
+                text-align: center;
+                font-size: 80px;
+                margin: 12px;
+                margin-top: 40px;
+                color: white;
+            }
+			h5{
+                text-align: center;
+                font-size: 50px;
+            }
+			.carousel-control-prev-icon,.carousel-control-next-icon {
+				height: 100px;
+				width: 100px;
+				outline: black;
+				background-size: 100%, 100%;
+				border-radius: 50%;
+				border: 1px solid black;
+				background-image: none;
+			}
+			.carousel-control-next-icon:after{
+				content: '>';
+				font-size: 55px;
+				color: red;
+			}
+			hr.new1 {
+				border: 10px solid #f4511e;
+				border-radius: 5px;
+			}
+			#customers {
+				font-family: Arial, Helvetica, sans-serif;
+				border-collapse: collapse;
+				width: 100%;
+			}
+			#customers td, #customers th {
+				border: 1px solid #ddd;
+				padding: 8px;
+			}
+			#customers tr:nth-child(even){background-color: #f2f2f2;}
+			#customers tr:hover {background-color: #ddd;}
+			#customers th {
+				padding-top: 12px;
+				padding-bottom: 12px;
+				text-align: left;
+				background-color: #4CAF50;
+				color: white;
+			}
+			.carousel-control-prev-icon:after {
+				content: '<';
+				font-size: 55px;
+				color: red;
+			}
+			footer{
+                background-color: black;
+                padding: 40px;
+                text-align: center;
+                color: white;
+                font-size: 20px;
+                margin-top: 55px;
+            }
+		</style>
+		<script>
+            $(document).ready(function(){
+                $('[data-toggle="tooltip"]').tooltip();   
+            });
+        </script>
+	</head>
+	<body data-spy="scroll" data-target=".navbar" data-offset="60">
+		<header>
+			 <nav class="navbar navbar-expand-sm fixed-top">
+                <a class="navbar-brand" href="/home" style="color:red">BIG DATA</a>
+                <ul class="navbar-nav">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">HOME</a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#s" data-toggle="tooltip" data-placement="left" title="STIPENDIO">SALARIO</a>
+                            <a class="dropdown-item" href="#t" data-toggle="tooltip" data-placement="left" title="ELABORAZIONE">ELABORAZIONE</a>
+							<a class="dropdown-item" href="#e" data-toggle="tooltip" data-placement="left" title="SEZ.ESEMPI">ESEMPI</a>
+							<a class="dropdown-item" href="#r" data-toggle="tooltip" data-placement="left" title="SEZ.ESEMPI">RESOCONTO</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/chat" data-toggle="tooltip" data-placement="top" title="CHATTA CON PERSONE">CHAT ONLINE</a>
+                    </li>
+                </ul>
+            </nav>
+			<div class="jumbotron-fluid">
+                <h1>BENVENUTO</h1>
+                <h5>In questo magnifico mondo del big data<h5>
+            </div>
+		</header>
+		<!--cap:1 HOME -->
+		<div id = "home" class="container-fluid">
+			<h2 style="color:red">BIG DATA</h2>
+			<p><i>In statistica e informatica, la locuzione inglese big data ("grandi [masse di] dati", o in italiano megadati) indica genericamente una raccolta di dati informativi così estesa in termini di volume, velocità e varietà da richiedere tecnologie e metodi analitici specifici per l'estrazione di valore o conoscenza. Il termine è utilizzato dunque in riferimento alla capacità (propria della scienza dei dati) di analizzare ovvero estrapolare e mettere in relazione un'enorme mole di dati eterogenei, strutturati e non strutturati (grazie a sofisticati metodi statistici e informatici di elaborazione), al fine di scoprire i legami tra fenomeni diversi (ad esempio correlazioni) e prevedere quelli futuri. I big data possono essere utilizzati per diversi scopi tra cui quello di misurare le prestazioni di un'organizzazione nonché di un processo aziendale.
+			</i></p>
+		</div>
+		<!--tre caratteristiche-->
+		<div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-4">
+					<h2 style="color:red">DESCRIZIONE</h2>
+					<p><i>Malgrado non esista una separazione rigorosa tra big data e altri dati (non classificabili come big), sono stati proposti diversi approcci per descriverne le peculiarità. Nel 2011 Teradata afferma che «Un sistema di big data eccede/sorpassa/supera i sistemi hardware e software comunemente usati per catturare, gestire ed elaborare i dati in un lasso di tempo ragionevole per una comunità/popolazione di utenti anche massiva». Un'ulteriore proposta di caratterizzazione dei big data è stata data dal McKinsey Global Institute: «Un sistema di Big Data si riferisce a dataset la cui taglia/volume è talmente grande che eccede la capacità dei sistemi di database relazionali di catturare, immagazzinare, gestire ed analizzare».</i></p>
+				</div>
+				<div class="col-sm-4">
+					<h2 style="color:red">MODELLO DEI ANALISI DEI DATI</h2>
+					<p><i>Come è stato detto in precedenza, il volume di dati dei Big Data e l'ampio uso di dati non strutturati non permette l'utilizzo dei tradizionali sistemi per la gestione di basi di dati relazionali (RDBMS), se non attraverso tecniche di strutturazione del dato. Un dato strutturato archiviato nei tradizionali sistemi RDBMS permette di avere prestazioni infinitamente migliori, nella ricerca, rispetto ai sistemi NoSQL, garantendo la consistenza del dato, che in sistemi Big Data generalmente non è garantita. I sistemi Big Data pertanto non sono da considerarsi complementari alle basi di dati, bensì un insieme di tecniche di ETL su dati non strutturati e generati in maniera geograficamente molto distribuita</i></p>
+				</div>
+				<div class="col-sm-4">
+					<h2 style="color:red">CICLO DI VITA</h2>
+					<p><i>L’estrazione di conoscenza dai Big Data e l’impiego della stessa per il miglioramento delle attività decisionali sono subordinati alla definizione di processi che consentano di gestire e trasformare in modo efficiente dataset che crescono rapidamente in volume e varietà. Ogni fase di ciascun processo modifica lo stato ed il contenuto degli stessi, contribuendo a convertire moli di dati ancora grezzi in valore e dunque ad arricchire il modello analitico dei dati</i></p>
+				</div>
+            </div>
+        </div>
+		<hr class="new1">
+		<!--salario-->
+		<div id="s" class="container-fluid">
+            <div class="row">
+                <div class="col-sm-4">
+					<img src="salario.jpeg" alt="big" width="500" height="600">
+				</div>
+				<div class="col-sm-8">
+					<h2 style="color:red">SALARIO BIG DATA INGEGNIERE E SVILUPPATORI</h2>
+					<p><i>In italia è ar dir poco brulificamente,come i sviluppatori web(che lavorano in italia) guadagnino cosi poco inconfronto di quelli esteri la differenza di salario è molto agghiacciante tanto da far rimpangere le persone di essere nate in questo paese pieno di ricchezza che alla fine è stato derubato dall'ignoranza delle persone di cui ne è priogionato.Qui sotto c'è una tabella con tutti i dati relativi degli stipendi da fonti in rete </i></p>
+					<table id="customers">
+					  <tr>
+						<th>NATIONAL</th>
+						<th>FRONT-END</th>
+						<th>BACK-END</th>
+						<th>FULL-STACK</th>
+						<th>BIG DATA ENGENERR</th>
+					  </tr>
+					  <tr>
+						<td>ITALIA</td>
+						<td>30000 E</td>
+						<td>33500 E</td>
+						<td>35000 E</td>
+						<td>30000 E</td>
+					  </tr>
+					  <tr>
+						<td>INGHITERRA</td>
+						<td>57,000 £</td>
+						<td>59,700 £</td>
+						<td>53,621 £</td>
+						<td>67,500 £</td>
+					  </tr>
+					  <tr>
+						<td>USA</td>
+						<td>74K $</td>
+						<td>73,361 $</td>
+						<td>77,500 $</td>
+						<td>72k $</td>
+					  </tr>
+					</table>
+				</div>
+			</div>
+		</div>
+		<hr class="new1">
+		<!--carousel-->
+		<div id="t" class="container-fluid">
+			<h2 style="color:red">Tecnologie di immagazzinamento ed elaborazione</h2>
+			<div id="demo" class="carousel slide" data-ride="carousel">
+				<div class="carousel-inner">
+					<div class="carousel-item active">
+						<h3>DATA MINING</h3>
+						<p>Il data mining è l'insieme di tecniche e metodologie che hanno per oggetto l'estrazione di informazioni utili da grandi quantità di dati</p>
+					</div>
+					<div class="carousel-item">
+						<h3>NOSQL</h3>
+						<p>NoSQL è un movimento che promuove sistemi software dove la persistenza dei dati è in generale caratterizzata dal fatto di non utilizzare il modello relazionale</p>  
+					</div>
+					<div class="carousel-item">
+						<h3>APACHE</h3>
+						<p>Apache Hadoop è un framework sotto una licenza libera che supporta applicazioni distribuite con elevato accesso ai dati, permettendo alle applicazioni di lavorare con migliaia di nodi e petabyte di dati</p> 
+					</div>
+				</div>
+				<a class="carousel-control-prev" href="#demo" data-slide="prev">
+				<span class="carousel-control-prev-icon"></span>
+				</a>
+				<a class="carousel-control-next" href="#demo" data-slide="next">
+				<span class="carousel-control-next-icon"></span>
+				</a>
+			</div>
+		</div>
+		<hr class="new1">
+		<!--esempi_come_lavorano-->
+		<div id="e" class="container-fluid">
+			<h2 style="color:red">ESEMPIO DI BIG DATA QUODITIANO</h2>
+			<p><i>In ambito marketing, l’uso dei Big Data è famigliare nella costruzione dei così detti metodi di raccomandazione, come quelli utilizzati da Netflix e Amazon per fare proposte di acquisto sulla base degli interessi di un cliente rispetto a quelli di milioni di altri. Tutti i dati provenienti dalla navigazione di un utente, dai suoi precedenti acquisti, dai prodotti valutati o ricercati permettono ai colossi del commercio (elettronico e non) di suggerire i prodotti più adatti agli scopi del cliente, quelli che solleticano la sua curiosità e lo spingono a comprare per necessità momentanea, permanente o per semplice impulso. Appartenenti ai Big Data sono gli algoritmi che riescono a predire se una shopper donna è incinta, tracciando le sue ricerche sul Web e gli oggetti acquisiti in precedenza, come lozioni e via discorrendo. Una volta individuato il particolare stato, a quella stessa utente si offrono offerte speciali e coupon su prodotti inerenti al proprio stato</i></p>
+		</div>
+		<hr class="new1">
+		<!--END POINT-->
+		<div id="r" class="container-fluid">
+			<h2 style="color:red">RESOCONTO CON MIA OPINIONE AL RIGUARDO</h2>
+			<p><i>Ah i big data una concreta evoluzione della mentalità dell'essere umano come amo definirla,poichè esso tenta di accedere nelle nostre mente e trovare le cose di cui abbiamo bisogno e cosi da garantire un servizio eccellente per il cliente interresato.Possiamo pensarlo come un ingraggio per agevolare l'uomo e cosi a renderlo anche più pigro ahahhahaha.Cosi i think what'up,stiamo nel futuro e non ce ne accorgiamo viviamo come se tutto fosse normale,anche se nel 700 c'era la persecuzione nei confronti di galileo oppure i punto più avanti alla storia la persecuzione degli ebrei.Il mondo si sviluppa cosi velocemente che infine ci rivela pure da dove veniamo e dove finiremo e i big data cosi ci aiutano a ricavare queste informarmaioni o miseri mortali li' fuori c'è un mondo ampliate il vostri orizzontti con esso</i></p>
+		</div>
+		<!--came back-->
+		<div class="container text-center">
+            <a href="#" class="btn">
+                <i class="fa fa-angle-up" style="font-size:30px"></i>
+                <h2>come back upstair</h2>
+            </a>
+        </div>
+		<!-- FOOTER -->
+        <footer style="background-color: #f4511e" class="container-fluid">
+            <div class="row">
+                <div class="col-sm-4">
+                    <h3>Follow on my profile</h3>
+                    <p>this is my page my name is with<br><span><a href="https://youtu.be/lQqSzqECTBg" target="_blank">MY INSTAGRAM PROFILE</a></span></p>
+                </div>
+                <div class="col-sm-4">
+                    <h3>Support</h3>
+                    <p>nobody i do all alone</p>
+                </div>
+                <div class="col-sm-4">
+                    <h3>Contact</h3>
+                    <p>my email: an@gmail.com</p>
+                </div>
+            </div>
+        </footer>
+	</body>
+</html>

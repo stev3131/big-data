@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="it">
+    <head>
+        <title>USER NAME</title>
+		 <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.6.1/css/bootstrap4-toggle.min.css" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.6.1/js/bootstrap4-toggle.min.js"></script>
+		<style>
+			body{
+                background-color: blue;
+                color:black;
+                text-align: center;
+            }
+            section{
+                border-radius: 25px;
+                border-color: white;
+                margin-right: 540px;
+                margin-left: 540px;
+                margin-top: 120px;
+                background-color: white;
+            }
+            a:link, a:visited {
+                background-color: blue;
+                color: white;
+                padding: 3px 5px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+            }
+            input[type=text] {
+                background-color: #3CBC8D;
+                border-radius: 5px;
+            }
+            input[type=text]:focus {
+                border: 3px solid #555;
+            }
+            input[type=password] {
+                background-color: #3CBC8D;
+                border-radius: 5px;
+            }
+            input[type=password]:focus {
+                border: 3px solid #555;
+            }
+            button {
+                background-color: #3CBC8D;
+                border: none;
+                color: white;
+                padding: 8px 20px;
+                text-decoration: none;
+                margin-top: 10px;
+                cursor: pointer;
+            }
+		</style>
+	</head>
+	<body>
+		<div class="container-fluid">
+            <section>
+                <h1 style="font-size: 80px;">BIG DATA</h1> 
+                <form method="get" action="/home">
+                    <i class="fa fa-user-circle"></i>
+                    <label for="name">Name:</label><br>
+                    <input type="text" id="name" name="name" placeholder="Name"required><br>
+                    <button type="submit">Send</button><br><br>
+                </form>
+            </section>
+        </div>
+	</body>
+</html>
